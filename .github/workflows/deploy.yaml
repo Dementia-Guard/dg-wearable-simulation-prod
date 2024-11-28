@@ -56,7 +56,8 @@ jobs:
             --set-env-vars MQTT_USERNAME=${{ secrets.MQTT_USERNAME }} \
             --set-env-vars MQTT_PASSWORD=${{ secrets.MQTT_PASSWORD }} \
             --set-env-vars MQTT_TOPIC=${{ secrets.MQTT_TOPIC }} \
-            --set-env-vars MQTT_QOS=${{ secrets.MQTT_QOS }}
+            --set-env-vars MQTT_QOS=${{ secrets.MQTT_QOS }} \
+            --set-env-vars PUB_SIMU_PORT=${{ secrets.PUB_SIMU_PORT }}
 
       - name: "Show output"
         run: |2-
