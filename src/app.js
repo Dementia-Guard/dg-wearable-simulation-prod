@@ -1,4 +1,4 @@
-const { connectMQTT } = require('./Configs/MqttClient');
+const { connectMQTT } = require('./Configs/MqttConfig');
 const { generateSensorData } = require('./Utils/Data');
 const envConfig = require('./Configs/envConfig');
 
