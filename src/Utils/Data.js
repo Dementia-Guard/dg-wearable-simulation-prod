@@ -9,7 +9,9 @@ const generateSensorData = () => {
         pulseRate: Math.floor(60 + Math.random() * 40),    // Pulse rate between 60 and 100 bpm
         bloodOxygen: (90 + Math.random() * 10).toFixed(2),   // Blood oxygen level in %, normal range 90-100%
         stepCount: Math.floor(Math.random() * 200),         // Random step count in the last interval
-        isIndoor:true,
+        isIndoor: Math.random() > 0.9,
+        isSOS: Math.random() > 0.9,
+        isTravelling: Math.random() === 1,
         accelerometer: {
             x: (Math.random() * 2 - 1).toFixed(3), // Random value between -1 and 1 for x-axis
             y: (Math.random() * 2 - 1).toFixed(3), // Random value between -1 and 1 for y-axis
